@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\csharp-src\BaseTools.Filters.csproj" />
+    <ProjectReference Include="..\BaseTools.Filters\BaseTools.Filters.csproj" />
   </ItemGroup>
 
 </Project>

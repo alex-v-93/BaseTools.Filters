@@ -25,7 +25,7 @@ filter.For(document => document.ExpiredDate)
 var expiredDocuments = await _documentRepository.GetByFilterAsync(filter);
 
 ```
-Для реализации репозитория под целевую базу потребуется один из модулей **BaseTools.Filters.Mappers.*** (см. [RoadMap](/#RoadMap)) под подходящую БД, от разработчика потребуется лишь в некоторых случаях явно указать соответствие свойств-полей между доменной моделью и моделью БД (ORM). При этом со стороны бизнес-логики (Use cases level) создавать фильтры можно с помощью `Filter<T>`, где T - тип модели, по которой производится поиск (в примере это DocumentModel). Для сериализации/десериализации фильтра, в т.ч. транспорт, можно использовать **BaseTools.Filters.Dto** (см. [RoadMap](/#RoadMap)). Для проверки коректности можно будет использовать **BaseTools.Filter.Validation** (см. [RoadMap](/#RoadMap)).
+Для реализации репозитория под целевую базу потребуется один из модулей **BaseTools.Filters.Mappers.*** (см. [RoadMap](README.md#RoadMap)) под подходящую БД, от разработчика потребуется лишь в некоторых случаях явно указать соответствие свойств-полей между доменной моделью и моделью БД (ORM). При этом со стороны бизнес-логики (Use cases level) создавать фильтры можно с помощью `Filter<T>`, где T - тип модели, по которой производится поиск (в примере это DocumentModel). Для сериализации/десериализации фильтра, в т.ч. транспорт, можно использовать **BaseTools.Filters.Dto** (см. [RoadMap](README.md#RoadMap)). Для проверки коректности можно будет использовать **BaseTools.Filter.Validation** (см. [RoadMap](README.md#RoadMap)).
 # RoadMap
 - [x] BaseTools.Filters
 - [x] BaseTools.Filters.Tests (inprogress)
